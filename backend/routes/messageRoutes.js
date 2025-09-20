@@ -16,7 +16,6 @@ router.get("/", authMiddleware, async (req, res) => {
 router.post("/", authMiddleware, async (req, res) => {
   try {
 
-    console.log(req.body);
     const { sender, receiver, text } = req.body;
     const newMessage = new Message({ sender, receiver, text });
     await newMessage.save();

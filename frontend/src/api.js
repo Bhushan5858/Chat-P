@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://10.149.92.144:5000/api";
+const API_URL = "https://chat-p-backend.onrender.com/api";
 
 export const registerUser = (data) => axios.post(`${API_URL}/auth/register`, data);
 export const loginUser = (data) => axios.post(`${API_URL}/auth/login`, data);
