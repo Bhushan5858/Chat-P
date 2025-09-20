@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { io } from "socket.io-client";
 import { sendMessageAPI, getMessagesAPI } from "../api.js";
 
-const socket = io("http://10.149.92.144:5000");
+const socket = io("https://chat-p-backend.onrender.com");
 
 export default function Chat({ username, onLogout }) {
   const [messages, setMessages] = useState([]);
