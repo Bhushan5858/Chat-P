@@ -8,7 +8,7 @@ export default function Login({ onLogin }) {
   const handleLogin = async () => {
     try {
       const trimmedUsername = username.trim();
-      const trimmedPassword = password.trim(); // optional, if you want to ignore trailing/leading spaces
+      const trimmedPassword = password.trim(); 
 
       const res = await loginUser({
         username: trimmedUsername,
